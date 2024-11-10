@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           SERVICE
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <script  src="script.js" defer>
+        </script>
+        <style>
+            * {margin:0px;padding: 0px;box-sizing:border-box;outline: none;border:none;transition: all .2s linear;text-transform: capitalize;}
+            html {font-size: 100%;overflow-x: hidden;}
+            body {background: pink;}
+            .container {max-width:1200px;margin: 0 auto;padding:3rem 2rem;}
+            .container .title{font-size: 3.5rem;background:linear-gradient(#7e7d7d,#d3d3d3,#fdfdfc,#d3d3d3,#7e7d7d);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;;margin-bottom: 3rem;text-align: center;}
+            .container .products-container {display:grid;grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));gap: 4rem;}
+            .container .products-container .product {text-align: center;padding:2rem 1rem;background: #eeeeee;box-shadow: 0 .5rem,1rem,rgba(0,0,0,.1);outline:.1rem solid #ccc ;outline-offset: -0.5rem;cursor: pointer;}
+            .container .products-container .product img{height: 20rem;}
+            .container .products-container .product:hover {outline:0rem solid #222;outline-offset: 0rem;}
+            .container .products-container .product:hover img {transform: scale(.9);}
+            .container .products-container .product h3 {padding: 1rem 0;font-size: 1.8rem;color:rgb(122, 25, 58)}
+            .container .products-container .product .price {font-size: 1rem;color:rgb(83, 16, 39)}
+            .preview {position:fixed;top:0;left:0;min-height:100vh;width:100%;background: rgba(0,0,0,.8);display: none;align-items: center;justify-content: center;}
+            .preview .pt{display:none;padding: 2rem;text-align: center;background: #fff;position: relative;margin: 2rem;width:30rem;}
+            .preview .pt.active {display: inline-block;}
+            .preview .pt .fa-times{position: absolute;top: 1rem;right:1rem;cursor: pointer;color: #444;font-size: 1.5rem;}
+            .preview .pt h3 {color:#444;font-size: 2rem;padding: 1rem ;}
+            .preview .pt p {line-height: 1.5;padding: 0 0;font-size: 1.2rem;color:#666;}
+            .preview .pt .price {padding: 1rem 0;font-size:1rem;color:rgb(55, 95, 82)}
+            .preview .pt .button {display: flex;gap:1.5rem;flex-wrap: wrap;margin-top: 1rem;}
+            .preview .pt .button a {background-color:#ccc;font-weight: bold;flex: 1 1 5rem;padding: 0rem;font-size: 1rem;color: #0f0f0f;border: 0.2rem solid rgb(54, 54, 54);}
+            .preview .pt .button a:hover {background-color:rgb(95, 95, 95);color:whitesmoke}
+            .navbar 
+            {background-color:#f759dc;font-weight:bolder;border-radius:38px;}
+            .navbar li
+            {float:left;list-style:none;margin:5px}
+            .navbar ul
+            {overflow:auto;}
+            .navbar a
+            {padding:5px 20px;text-decoration:none;color:rgb(236, 230, 217);}
+            .silver{background:linear-gradient(#7e7d7d,#d3d3d3,#fdfdfc,#d3d3d3,#7e7d7d);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;}
+        </style>
+    </head>
+    <body>
+
+      <div class="navbar">
+         <nav class="silver">
+            <ul>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><a href="Thebigfatindianwedding.html">HOME</a></li>
+                 <li><a href="Abtus.html">ABOUT US</a></li>
+                <Li><a href="service.html">SERVICES</a></Li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+             </ul>
+        </nav>
+       </div>
+       <div class="container">
+           <h1 class="title">SERVICES</h1>
+           <div class="products-container">
+           <div class="product" data-name="p1">
+            <img height="350px" width="300px" src="https://static-bebeautiful-in.unileverservices.com/1200/900/8-popular-locations-for-a-destination-wedding-600x350-picmobhome.jpg" alt="destination pic">
+           <h3>Destination management</h3>
+           <div class="price">
+            $70/hr + additinal charges
+           </div>
+           </div>
+
+           <div class="product" data-name="p2">
+            <img height="350px" width="300px" src="https://images.shaadisaga.com/shaadisaga_production/photos/pictures/001/019/064/new_medium/taj_palace_delhi.JPG?1565096201" >
+           <h3>Venue Selection</h3>
+           <div class="price">
+            $50/hr + additinal charges
+           </div>
+           </div>
+
+           <div class="product" data-name="p3">
+            <img height="350px" width="300px" src="https://www.jaipurstuff.com/wp-content/uploads/2021/10/Indian-Wedding-Food-menu.jpg">
+           <h3>Menu Selection</h3>
+           <div class="price">
+            $30/hr + additinal charges
+           </div>
+           </div>
+           
+           <div class="product" data-name="p4">
+            <img height="350px" width="300px" src="https://lh3.ggpht.com/ai0FFUz4i0mWU7Q5cdHsz5YICah-lRt1_-T2DE6cBJxe9_asD815QpgFMYz5LdLEg7yG2cnQG882BpfqZJMPaMU=s900" >
+           <h3>Photography/video</h3>
+           <div class="price">
+            $70/hr + additinal charges
+           </div>
+           </div>
+
+           <div class="product" data-name="p5">
+            <img height="350px" width="300px" src="https://aroyalaffair.in/wp-content/uploads/2023/06/logistics1.jpg">
+           <h3>Travel and logistics</h3>
+           <div class="price">
+            $50/hr + additinal charges
+           </div>
+           </div>
+
+           <div class="product" data-name="p6">
+            <img height="350px" width="300px" src="https://5.imimg.com/data5/WD/AG/HP/SELLER-54419109/wedding-light-decoration.jpeg">
+           <h3>light & sound Production</h3>
+           <div class="price">
+            $90/hr + additinal charges
+           </div>
+           </div>
+           </div>
+        <div class="preview">
+           
+           <div class="pt" data-target="p1">
+            <i class="fas fa-times"></i>
+            <img height="350px" width="300px" src="https://static-bebeautiful-in.unileverservices.com/1200/900/8-popular-locations-for-a-destination-wedding-600x350-picmobhome.jpg" alt="destination pic">
+           <h3>Destination management</h3>
+           <p>Create Beautifull memories and Beautifull Smiles</p>
+           <div class="price">$70+additinal charges</div>
+           <div class="button">
+              <a href="#" class="buy">Book Now</a>
+           </div>
+           </div>
+
+           <div class="pt" data-target="p2">
+            <i class="fas fa-times"></i>
+            <img height="350px" width="300px" src="https://images.shaadisaga.com/shaadisaga_production/photos/pictures/001/019/064/new_medium/taj_palace_delhi.JPG?1565096201" >           <h3>Venue selection</h3>
+           <p> Unforgettable memories</p>
+           <div class="price">$50+additinal charges</div>
+           <div class="button">
+              <a href="#" class="buy">Book Now</a>
+           </div>
+           </div>
+
+           <div class="pt" data-target="p3">
+            <i class="fas fa-times"></i>
+            <img height="350px" width="300px" src="https://www.jaipurstuff.com/wp-content/uploads/2021/10/Indian-Wedding-Food-menu.jpg">
+           <h3>Menu selection</h3>
+           <p>Food makes people to live in the moment</p>
+           <div class="price">$30+additinal charges</div>
+           <div class="button">
+              <a href="#" class="buy">Book Now</a>
+           </div>
+           </div>
+
+           <div class="pt" data-target="p4">
+            <i class="fas fa-times"></i>
+            <img height="350px" width="300px" src="https://lh3.ggpht.com/ai0FFUz4i0mWU7Q5cdHsz5YICah-lRt1_-T2DE6cBJxe9_asD815QpgFMYz5LdLEg7yG2cnQG882BpfqZJMPaMU=s900" >
+           <h3>Photography/video</h3>
+           <p>To remember those smiles forever</p>
+           <div class="price">$70+additinal charges</div>
+           <div class="button">
+              <a href="#" class="buy">Book Now</a>
+           </div>
+           </div>
+
+           <div class="pt" data-target="p5">
+            <i class="fas fa-times"></i>
+            <img height="350px" width="300px" src="https://aroyalaffair.in/wp-content/uploads/2023/06/logistics1.jpg">
+           <h3>Travel/logistics</h3>
+           <p>To ease your work</p>
+           <div class="price">$50+additinal charges</div>
+           <div class="button">
+              <a href="#" class="buy">Book Now</a>
+           </div>
+           </div>
+
+           <div class="pt" data-target="p6">
+            <i class="fas fa-times"></i>
+            <img height="350px" width="300px" src="https://5.imimg.com/data5/WD/AG/HP/SELLER-54419109/wedding-light-decoration.jpeg">
+           <h3>Music/light</h3>
+           <p>To Create mood</p>
+           <div class="price">$90+additinal charges</div>
+           <div class="button">
+              <a href="#" class="buy">Book Now</a>
+           </div>
+           </div>
+           
+           
+
+           </div>
+       </div>
+    </body>
+</html>
